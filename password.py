@@ -32,8 +32,9 @@ while n > 1:
 	else:
 		print('密碼錯誤！')
 		if i > 0:
-		print('密碼錯誤！還有', n, '次機會！')
-		
+			print('密碼錯誤！還有', n, '次機會！')
+		else:
+			print('帳號鎖定')
 
 
 
