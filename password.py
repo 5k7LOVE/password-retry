@@ -23,7 +23,7 @@ n = 3
 # 		print('登入成功')
 # 		break
 
-while True:
+while n > 0:
 	kayIn = input('請輸入密碼')
 	if kayIn == password:
 		print('登入成功')
@@ -31,9 +31,7 @@ while True:
 	else:
 		n -= 1
 		print('密碼錯誤！還有', n, '次機會！')
-		if n == 0:
-			print('帳號被鎖定定定定定')
-			break
+		
 
 
 
