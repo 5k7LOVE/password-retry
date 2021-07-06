@@ -9,6 +9,12 @@ password = 'a123456'
 n = 3
 # kayIn = input('請輸入密碼')
 
+
+
+
+
+
+
 # while n >= 1:
 # 	if kayIn != password:
 # 		print('密碼錯誤！還有', n, '次機會！')
@@ -23,19 +29,28 @@ n = 3
 # 		print('登入成功')
 # 		break
 
-while n > 1:
+# while n > 1:
+# 	n -= 1
+# 	kayIn = input('請輸入密碼')
+# 	if kayIn == password:
+# 		print('登入成功')
+# 		break
+# 	else:
+# 		print('密碼錯誤！')
+# 		if i > 0:
+# 			print('密碼錯誤！還有', n, '次機會！')
+# 		else:
+# 			print('帳號鎖定')
+
+while n >= 1:
 	n -= 1
 	kayIn = input('請輸入密碼')
 	if kayIn == password:
 		print('登入成功')
 		break
 	else:
-		print('密碼錯誤！')
-		if i > 0:
+		if n != 0:
 			print('密碼錯誤！還有', n, '次機會！')
-		else:
-			print('帳號鎖定')
-
-
-
+		else:	
+			print('別鬧了')
 
